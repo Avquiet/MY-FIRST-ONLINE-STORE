@@ -1,0 +1,59 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.category-item {
+  background-color: #211616;
+  width: 360px;
+  height: 260px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  background-image: url(../img/Category-women.png);
+
+  &-2 {
+    background-image: url(../img/category-man.jpg);
+  }
+
+  &-3 {
+    background-image: url(../img/For-kids.jpg);
+  } 
+
+  &-4 {
+    margin-bottom: 0;
+    width: 100%;
+    height: 180px;
+    scroll-padding: 65px;
+    background-image: url(../img/for-last.png);
+  }
+
+  &-title {
+    padding-top: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    
+  }
+
+  &-title-1 {
+    padding-top: 65px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }   
+
+}
+
+
+.color-text {
+  display: block;
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}

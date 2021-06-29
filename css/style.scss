@@ -1,0 +1,49 @@
+$pink: #F16D7F;
+
+
+
+body {
+  font-family: 'Lato' , sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.center {
+  //плавный врап(в изучении))
+  
+  padding: 0 calc(50% - 1140px / 2);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/promo";
+@import "blocks/categories";
+@import "blocks/catalog-filter";
+@import "blocks/products";
+@import "blocks/slide";
+@import "blocks/advantages";
+@import "blocks/form";
+@import "blocks/podval";
+@import "blocks/cards";
+@import "blocks/rgs";
+@import "blocks/media-tablet";
+@import "blocks/media-mobile";

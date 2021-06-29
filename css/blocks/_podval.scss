@@ -1,0 +1,30 @@
+.podval {
+  background-color: #222;
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-text {
+    padding-top: 30px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FBFBFB;
+  }
+
+  &-social {
+    padding-top: 24px;
+    padding-bottom: 23px;
+  }
+
+}
+
+
+.social-socials:hover .social-socials-0 {
+  fill: #F16D7F
+}
+
+.social-socials:hover .social-socials-1 {
+  fill: #FFFFFF;
+}

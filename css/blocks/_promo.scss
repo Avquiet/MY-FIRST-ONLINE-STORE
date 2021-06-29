@@ -1,0 +1,78 @@
+.promo {
+  background-color: #F1E4E6;
+
+  &-wrap {
+    height: 100vh;
+    min-height: 386px;
+    height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../img/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position: -224px bottom;
+    /* background-size: 50%; */
+  }
+
+  &-title {
+    margin: 0;
+    margin-left: 64px;
+    margin-top: -50px;
+    border-left: 12px solid $pink;
+    padding-left: 16px;
+  } 
+
+  &-1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+  } 
+
+  &-2 {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+  }
+
+  &-3 {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 38px;
+    color: #FF6A6A;
+  }
+
+  &-catalog {
+    background: #F8F3F4;
+  }
+
+  &-catalog-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-catalog-title-2 {
+    margin-top: 59px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+  }
+
+  &-catalog-title-3 {
+    margin-top: 65px;
+    margin-bottom: 66px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+  }
+
+  &-catalog-title-4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+  } 
+
+}

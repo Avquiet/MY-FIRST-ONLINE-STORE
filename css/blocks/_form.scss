@@ -1,0 +1,99 @@
+.form {
+  background: url(../img/footer-all-image-sub-2.jpg);
+  background-size: cover;
+}
+
+.reviews {
+  margin-top: 85px;
+}
+
+.feedback {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+
+  &-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 86px;
+  }
+
+  &-title-1 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+  }
+}
+
+
+
+.subscribe {
+  margin-top: 130px;
+
+
+  &-title-text-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &-title-text-2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+  }
+
+  &-button {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-btn {
+    width: 100px;
+    height: 49px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background: #F16D7F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  &-btn:hover {
+    background-color: plum;
+  }
+
+  &-btn:focus {
+    outline: none;
+  }
+
+}
+
+
+
+.email-btn {
+  width: 240px;
+  height: 49px;
+  padding-left: 22px;
+  background: #E1E1E1;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; 
+  color:darkblue;
+}
+
+.email-btn:hover {
+  background-color: silver;
+}
+
+.email-btn:focus {
+  outline: none;
+}

@@ -1,0 +1,46 @@
+.header {
+  background-color: #222;
+
+  &-left {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  &-right {
+    padding-top: 27px;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-burger-link {
+    fill: #E8E8E8;
+  }
+
+  &-burger-link:hover {
+    fill: grey;
+    cursor: pointer;
+  }
+
+  &-nav {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    word-wrap: normal;
+    z-index: 10;
+  }
+
+  &-logo-link {
+    margin-right: 41px;
+  }
+
+  &-account-link {
+    margin-left: 25px;
+    margin-right: 42px;
+  }
+
+}
