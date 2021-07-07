@@ -1,0 +1,20 @@
+[
+  {
+    "id_product": 200,
+    "product_name": "NIKE T-SERIES SHIRT",
+    "color": "blue-white",
+    "size": "XI",
+    "price": 300,
+    "imgProduct": "./img/products/product-man-2.png",
+    "imgCart": "./img/products/product-man-2.png"
+  },
+  {
+    "id_product": 278,
+    "product_name": "ADIDAS T-SERIES SHIRT",
+    "color": "red-black",
+    "size": "XI",
+    "price": 250,
+    "imgProduct": "./img/products/card-foto-2.jpg",
+    "imgCart": "./img/cart/card-foto-2.jpg"
+  }
+]

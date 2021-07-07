@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato' , sans-serif;
+}
+
+#app {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 570px;
+}
+
+header {
+    min-height: 50px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+h2 {
+    color: darkgreen;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon-cart {
+    padding-right: 10px;
+}
+
+.btn-cart:hover {
+    color: white;
+    background: grey;
+    cursor: pointer;
+}
+
+.btn-cart:active {
+    color: white;
+    background: grey;
+    outline: none;
+}
+
+.products {
+    display: flex;
+    width: 652px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 96px;
+}
+
+.product-item {
+    display: flex;
+    margin-bottom: 40px;
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+}
+
+.product-item h3 {
+    margin-bottom: 35px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0;
+    text-transform: uppercase;
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+
+.product-item p {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+
+.cart-photo-2 {
+    width: 262px;
+    height: 306px;
+}
+
+.buy-btn,
+.del-btn {
+    padding: 10px;
+    background-color:indianred;
+    border-radius: 5px;
+    border: 3px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.product-item:hover {
+    transition-delay: 0.1s;
+    transform: scale(1.1);
+}
+
+.buy-btn:hover,
+.del-btn:hover {
+    color: white;
+    background: lightgray;
+    cursor: pointer;
+}
+
+.buy-btn:active,
+.del-btn:active {
+    color: white;
+    background: #222;
+    outline: none;
+}
+
+.cart {
+    display: flex;
+    position: relative;
+}
+
+.cart-block {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+    border-radius: 5px;
+    box-sizing: border-box;
+    right: 0;
+    top: 130%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    width: 350px;
+}
+
+.invisible {
+    display: none;
+}
+
+.cart-block:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.out {
+    font-weight: bold;
+}
+
+.btn-search {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.btn-search:active {
+    background-color: transparent;
+    border: none;
+}
+
+.search-form {
+    position: relative;
+    margin-right: 840px;
+    display: inline-block;
+}
+
+.search-field:focus {
+    outline: none;
+}
+
+.search-field {
+    box-sizing: border-box;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.product-bio {
+    display: flex;
+}
+
+.cart-item img {
+    align-self: flex-start;
+    margin-right: 15px;
+    padding-top: 0;
+}
+
+.product-single-price {
+    color: black;
+    font-size: 0.75em;
+}
+
+.product-price {
+    margin-left: 30px;
+}
+
+.desc {
+   position: relative;
+   width: 390px;
+   padding-top: 22px;
+   padding-left: 31px;
+}
+
+.product-quantity {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75em;
+}
+
+.right-block {
+    text-align: right;
+}
+
+.cart-sum {
+    text-align: center;
+    margin: 0 auto 15px;
+    font-size: 1.15em;
+}
+
+.found {
+    text-align: center;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+}
+
+.card-1 {
+  display: flex;
+  margin-bottom: 40px;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+}
+
+.card-1:hover {
+  transition-duration: 2s;
+  transform: translateX(10px) scale(1);
+}
+
+.card-title {
+  position: relative;
+  width: 390px;
+  padding-top: 22px;
+  padding-left: 31px;
+}
+
+.card-delete {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+
+.card-text-1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
+.card-text {
+  margin-top: 42px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.card-text-2 {
+  color: pink;
+}
+
+.card-text-4 {
+  margin-top: 6px;
+}
+
+.cards-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text-3 {
+  border: 1px solid #EAEAEA;
+  width: 43px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  outline: none;
+  margin-left: 24px;
+}
+
+.card-btn {
+  margin-bottom: 128px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-btn {
+  cursor: pointer;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+}
+
+.c-btn:hover {
+    background-color: #B1B1B1;
+}
+
+.c-btn-text {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 39px;
+  padding-right: 41px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.c-btn-text:hover {
+    color: white;
+} 
+
+.card-form {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.card-form-put {
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  width: 360px;
+  padding: 13px 17px;
+  outline: none;
+}
+
+.card-form-put::placeholder {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.card-form-put-2 {
+  margin-top: 21px;
+  border: 1px solid #A4A4A4;
+  width: 360px;
+  padding: 13px 17px;
+  outline: none;
+}
+
+.card-form-put-2::placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.card-form-put-3 {
+  margin-top: 24px;
+  width: 100px;
+  border: 1px solid #A4A4A4;
+  background: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 57px;
+}
+
+.card-form-put-3:hover {
+    background-color: #B1B1B1;
+}
+
+.card-form-put-3-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 13px;
+}
+
+.card-form-put-3-text:hover {
+    color: white;
+}
+
+.card-info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background: #F5F3F3;
+    width: 360px;
+    height: 214px;
+}
+
+
+.info-text-1 {
+  margin-top: 39px;
+  margin-left: 218px;
+  margin-right: 34px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+
+.info-text-2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-left: 153px;
+  margin-top: 12px;
+}
+
+.i-text-2 {
+  margin: 0 auto;
+  font-weight: 700;
+  color: pink;
+  padding-left: 20px;
+}
+
+.c-info-hr {
+  margin: 0 auto;
+  border: none;
+  height: 1px;
+  background-color: #EAEAEA;
+  width: 275px;
+  display: flex;
+  align-items: center;
+  background: #E2E2E2;
+  margin-top: 21px;
+}
+
+.btn-info {
+  margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: 42px;
+  background: #F16D7F;
+  border: none;
+  outline: none;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 41px;
+  padding-right: 43px;
+}
+
+.btn-info:hover {
+  transition-delay: 0.1s;
+  background-color: #FFFFFF;
+  border: 1px solid #FF6A6A;
+}
+
+.btn-info:hover .btn-info-text {
+  color: #F26376;
+}
+
+.btn-info-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
