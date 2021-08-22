@@ -1,3 +1,6 @@
+@import "blocks/snake";
+
+
 body{
     font-family: 'SF Pro Display', sans-serif;
 }
@@ -169,3 +172,60 @@ img {
     border: none;
     border-bottom: 2px solid #fafafa;
 }
+
+
+
+
+#snake-field{
+    display: inline-block; 
+}
+.snake-renew, .snake-start, .snake-start-nonactive {
+    width: 140px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    float: left; 
+}
+.snake-start, .snake-start-nonactive {
+    margin-right: 10px;
+}
+.snake-start-nonactive{
+    background-color: #005300;
+}
+
+.game-table{
+    border-collapse: collapse;
+    background-color:yellowgreen;
+}
+td.game-table-cell{
+    width: 15px;
+    height: 15px;                                  
+    
+}
+.snake-unit{
+    background-color: rosybrown;
+}
+.food-unit{
+    background-color: orangered;
+}
+.problem-unit {
+    background-color: aqua;
+}
+.buttons{
+    display: inline-block;
+}
+.wrap{
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

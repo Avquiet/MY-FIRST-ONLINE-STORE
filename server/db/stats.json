@@ -1073,5 +1073,31 @@
         "Product_name": "ADIDAS T-SERIES SHIRT",
         "Action": "Removed from cart",
         "Time": "July 7th 2021, 9:04:10 pm"
+    },
+    {
+        "Product_name": "NIKE T-SERIES SHIRT",
+        "Action": "Removed from cart",
+        "Time": "July 7th 2021, 11:11:41 pm"
+    },
+    {
+        "Product_name": "NIKE T-SERIES SHIRT",
+        "Action": "Added to cart",
+        "Time": "July 7th 2021, 11:11:42 pm"
+    },
+    {
+        "Product_name": "ADIDAS T-SERIES SHIRT",
+        "Action": "Added to cart",
+        "Time": "July 7th 2021, 11:11:44 pm"
+    },
+    {
+        "Product_name": "ADIDAS T-SERIES SHIRT",
+        "Action": "Removed from cart",
+        "Time": "July 7th 2021, 11:11:48 pm"
+    },
+    {
+        "Product_name": "NIKE T-SERIES SHIRT",
+        "Action": "Removed from cart",
+        "Time": "July 7th 2021, 11:11:48 pm"
     }
+]
 ]

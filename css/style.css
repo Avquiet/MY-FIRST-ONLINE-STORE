@@ -911,6 +911,14 @@ details summary::-webkit-details-marker {
   margin-right: 0;
 }
 
+.btn_1 {
+  position: absolute;
+}
+
+.btn_2 {
+  position: absolute;
+}
+
 .advantages {
   background-color: #222;
   padding: 20px 0;
@@ -2065,5 +2073,207 @@ details summary::-webkit-details-marker {
   .catalog-filters-title {
     margin-left: 31px;
   }
+}
+
+#snake-field {
+  display: inline-block;
+}
+
+.snake-renew, .snake-start, .snake-start-nonactive {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  color: #d2bdff;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.snake-start, .snake-start-nonactive {
+  margin-right: 10px;
+}
+
+.snake-start-nonactive {
+  position: relative;
+  display: inline-block;
+  padding: 30px 61px;
+  border-radius: 4px;
+  color: #d2bdff;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.game-table {
+  border-collapse: collapse;
+  background-color: yellowgreen;
+}
+
+td.game-table-cell {
+  width: 15px;
+  height: 15px;
+}
+
+.snake-unit {
+  background-color: rosybrown;
+  border-radius: 100px;
+}
+
+.food-unit {
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+.problem-unit {
+  background-color: aqua;
+}
+
+.buttons {
+  display: inline-block;
+}
+
+.wrap {
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.score-text, .score-point {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc, 0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
+}
+
+.snake-start {
+  border: 2px solid #d2bdff;
+  height: 80px;
+  width: 200px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  margin: 25px;
+}
+
+.snake-start::after {
+  content: "START";
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #d2bdff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.snake-start::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: #d2bdff;
+  -webkit-box-shadow: 0px 0px 10px 3px #0ff;
+          box-shadow: 0px 0px 10px 3px #0ff;
+  margin-left: -8px;
+  margin-top: -8px;
+  opacity: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  border-radius: 100%;
+  -webkit-animation: star 1.3s linear infinite;
+          animation: star 1.3s linear infinite;
+}
+
+@-webkit-keyframes star {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  25% {
+    margin-left: 194px;
+    margin-top: -8px;
+  }
+  50% {
+    margin-left: 194px;
+    margin-top: 75px;
+  }
+  75% {
+    margin-left: -8px;
+    margin-top: 75px;
+  }
+  100% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+}
+
+@keyframes star {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  25% {
+    margin-left: 194px;
+    margin-top: -8px;
+  }
+  50% {
+    margin-left: 194px;
+    margin-top: 75px;
+  }
+  75% {
+    margin-left: -8px;
+    margin-top: 75px;
+  }
+  100% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+}
+
+.snake-start:hover::before {
+  opacity: 1;
+  -webkit-animation: star 1.3s linear infinite;
+          animation: star 1.3s linear infinite;
+}
+
+.snake-start:hover::after {
+  content: "GO";
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc, 0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
+}
+
+.snake-renew {
+  position: relative;
+  display: inline-block;
+  padding: 30px 61px;
+  border-radius: 4px;
+  color: #d2bdff;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.snake-renew:hover {
+  border: 1px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */
